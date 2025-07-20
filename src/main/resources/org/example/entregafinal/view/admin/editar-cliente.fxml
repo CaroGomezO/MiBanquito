@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="530.0" prefWidth="700.0" stylesheets="@../styles/editarCliente.css"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.entregafinal.controller.admin.EditarClienteController"
+            styleClass="container_admin">
+
+    <VBox alignment="TOP_CENTER" spacing="10.0" styleClass="admin_container" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+        <VBox maxWidth="548" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text fill="#f0fbd0" strokeWidth="0.0" styleClass="title_text" text="Mi Banquito - Editar Cliente"/>
+        </VBox>
+
+        <VBox spacing="10" alignment="CENTER" styleClass="form_card" maxWidth="548" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <VBox alignment="CENTER" spacing="8">
+                <FontIcon iconLiteral="fas-user-edit" iconSize="46" styleClass="icon_card"/>
+                <Label text="Editar Cliente" styleClass="form_title"/>
+                <Label text="Actualiza los datos de contacto del cliente." styleClass="form_subtitle"/>
+            </VBox>
+
+            <VBox spacing="10" styleClass="form_inputs">
+                <Label text="Correo Electrónico" styleClass="form_label"/>
+                <TextField fx:id="emailField" promptText="Correo Electrónico" styleClass="form_input"/>
+
+                <Label text="Teléfono" styleClass="form_label"/>
+                <TextField fx:id="telefonoField" promptText="Teléfono" styleClass="form_input"/>
+
+                <Label text="Dirección" styleClass="form_label"/>
+                <TextField fx:id="direccionField" promptText="Dirección" styleClass="form_input"/>
+            </VBox>
+
+            <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+            <HBox alignment="CENTER" spacing="12" styleClass="hbox_buttons">
+                <Button onAction="#guardarCambios" text="Guardar Cambios" styleClass="form_button">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-save" iconSize="15" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </VBox>
+</AnchorPane>

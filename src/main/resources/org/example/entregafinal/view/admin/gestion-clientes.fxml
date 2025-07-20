@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="540.0" prefWidth="850.0" stylesheets="@../styles/listaClientes.css"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="org.example.entregafinal.controller.admin.GestionClientesController"
+            styleClass="panel">
+
+    <VBox layoutX="60.0" layoutY="60.0" prefHeight="467.0" prefWidth="770.0" styleClass="info_container"
+          AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"
+          AnchorPane.topAnchor="40.0">
+
+        <VBox styleClass="title_container">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text styleClass="title_text" text="Mi Banquito - Gestión de Clientes"/>
+        </VBox>
+
+        <HBox spacing="10" styleClass="filter_container">
+            <Label text="Buscar Cliente:"/>
+            <TextField fx:id="busquedaField" promptText="Cédula o Nombre"/>
+            <Button onAction="#buscarCliente" text="Buscar" styleClass="button_panel">
+                <graphic>
+                    <FontIcon iconLiteral="fas-search" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+            <Button onAction="#mostrarTodos" text="Mostrar Todos" styleClass="button_panel">
+                <graphic>
+                    <FontIcon iconLiteral="fas-eye" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <VBox styleClass="tabla_container" spacing="10">
+            <TableView fx:id="tablaClientes" prefHeight="330">
+                <placeholder>
+                    <VBox alignment="CENTER" spacing="8">
+                        <Label styleClass="empty_msg" text="No se encontraron clientes."/>
+                        <Label styleClass="empty_subtext"
+                               text="Prueba cambiando los parámetros de búsqueda o consulta más tarde."/>
+                    </VBox>
+                </placeholder>
+                <columns>
+                    <TableColumn fx:id="colCedula" prefWidth="130" text="Cédula"/>
+                    <TableColumn fx:id="colNombre" prefWidth="170" text="Nombre Completo"/>
+                    <TableColumn fx:id="colEmail" prefWidth="185" text="Correo"/>
+                    <TableColumn fx:id="colTelefono" prefWidth="145" text="Teléfono"/>
+                    <TableColumn fx:id="colAcciones" prefWidth="200" text="Acciones"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+        <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+        <VBox alignment="CENTER" styleClass="vbox_button">
+            <Button fx:id="menuButton" onAction="#volverAlMenuPrincipal" text="Volver al Menú"
+                    styleClass="button_panel">
+                <graphic>
+                    <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+        </VBox>
+    </VBox>
+</AnchorPane>

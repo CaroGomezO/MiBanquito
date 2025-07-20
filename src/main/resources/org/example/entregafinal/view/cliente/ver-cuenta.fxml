@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="600.0"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.entregafinal.controller.cliente.VerCuentaController"
+            stylesheets="@../styles/cuentaCliente.css">
+    <VBox AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+          styleClass="vbox_container">
+
+        <VBox styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text strokeWidth="0.0" styleClass="title_text"
+                  text="Mi Banquito - Información de la Cuenta"/>
+        </VBox>
+
+        <HBox styleClass="card_box">
+            <VBox styleClass="card">
+                <FontIcon iconLiteral="fas-money-check" iconSize="25" styleClass="card_icon"/>
+                <Label text="Número de Cuenta" styleClass="card_text"/>
+                <Label fx:id="numeroCuentaLabel" styleClass="card_label"/>
+            </VBox>
+
+            <VBox styleClass="card">
+                <FontIcon iconLiteral="fas-user-check" iconSize="25" styleClass="card_icon"/>
+                <Label text="Tipo de Cuenta" styleClass="card_text"/>
+                <Label fx:id="tipoCuentaLabel" styleClass="card_label"/>
+            </VBox>
+
+            <VBox styleClass="saldo_card">
+                <FontIcon iconLiteral="fas-wallet" iconSize="25" styleClass="card_icon"/>
+                <Label text="Saldo Actual" styleClass="card_text"/>
+                <Label fx:id="saldoLabel" styleClass="saldo"/>
+            </VBox>
+        </HBox>
+
+        <HBox styleClass="hbox_buttons">
+            <Button onAction="#irAMovimientos" text="Ver Movimientos">
+                <graphic>
+                    <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+            <Button onAction="#volverMenu" text="Volver al Menú">
+                <graphic>
+                    <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <Label fx:id="mensajeLabel" textFill="red"/>
+    </VBox>
+</AnchorPane>

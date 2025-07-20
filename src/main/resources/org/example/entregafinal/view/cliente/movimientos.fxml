@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="850.0" styleClass="panel" stylesheets="@../styles/movimientosCliente.css"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.entregafinal.controller.cliente.MovimientosClienteController">
+
+    <VBox layoutX="60.0" layoutY="60.0" prefHeight="467.0" prefWidth="770.0" styleClass="info_container"
+          AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"
+          AnchorPane.topAnchor="40.0">
+
+        <VBox styleClass="title_container">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text styleClass="title_text" text="Mi Banquito - Movimientos de Cuenta"/>
+        </VBox>
+
+        <HBox styleClass="filter_container">
+            <VBox alignment="CENTER_LEFT">
+                <Label text="Filtrar por tipo:"/>
+                <ComboBox fx:id="tipoCombo" promptText="Seleccione"/>
+            </VBox>
+
+            <VBox alignment="CENTER_LEFT">
+                <Label text="Desde:"/>
+                <DatePicker fx:id="fechaInicioPicker"/>
+            </VBox>
+
+            <VBox alignment="CENTER_LEFT">
+                <Label text="Hasta:"/>
+                <DatePicker fx:id="fechaFinPicker"/>
+            </VBox>
+
+            <VBox alignment="CENTER_LEFT">
+                <Label text=""/>
+                <Button onAction="#filtrarMovimientos" prefWidth="100" text="Filtrar" styleClass="button_panel">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-filter" iconSize="15" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+            </VBox>
+
+            <VBox alignment="CENTER_LEFT">
+                <Label text=""/>
+                <Button onAction="#mostrarTodos" prefWidth="130" text="Ver Todo" styleClass="button_panel">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-eye" iconSize="15" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+            </VBox>
+        </HBox>
+
+        <VBox styleClass="tabla_container">
+            <TableView fx:id="tablaMovimientos" prefHeight="330">
+                <placeholder>
+                    <VBox alignment="CENTER" spacing="8">
+                        <Label styleClass="empty_msg" text="No se encontraron movimientos."/>
+                        <Label styleClass="empty_subtext" text="Prueba cambiando los filtros o consulta más tarde."/>
+                    </VBox>
+                </placeholder>
+                <columns>
+                    <TableColumn fx:id="colFecha" maxWidth="90" minWidth="90" prefWidth="90" text="Fecha"/>
+                    <TableColumn fx:id="colTipo" maxWidth="140" minWidth="140" prefWidth="140" text="Tipo"/>
+                    <TableColumn fx:id="colMonto" maxWidth="100" minWidth="100" prefWidth="100" text="Monto"/>
+                    <TableColumn fx:id="colCuentaOrigen" maxWidth="110" minWidth="110" prefWidth="110"
+                                 text="Cuenta Origen"/>
+                    <TableColumn fx:id="colCuentaDestino" maxWidth="110" minWidth="110" prefWidth="110"
+                                 text="Cuenta Destino"/>
+                    <TableColumn fx:id="colSaldoAnterior" maxWidth="100" minWidth="100" prefWidth="100"
+                                 text="Saldo Anterior"/>
+                    <TableColumn fx:id="colSaldoNuevo" maxWidth="100" minWidth="100" prefWidth="100"
+                                 text="Saldo Nuevo"/>
+                    <TableColumn fx:id="colEstado" maxWidth="80" minWidth="80" prefWidth="80" text="Estado"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <Button onAction="#volverAlMenu" text="Volver al Menú" styleClass="button_panel">
+                <graphic>
+                    <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                </graphic>
+            </Button>
+        </VBox>
+
+    </VBox>
+</AnchorPane>

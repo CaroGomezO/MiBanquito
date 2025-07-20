@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" stylesheets="@../styles/perfilAdmin.css"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.entregafinal.controller.admin.EditarAdminController" styleClass="panel">
+
+    <children>
+        <VBox alignment="TOP_CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+              AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" styleClass="vbox_container">
+            <VBox alignment="CENTER" styleClass="title_container" prefWidth="700.0">
+                <children>
+                    <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+                    <Text strokeType="OUTSIDE" text="Mi Banquito - Editar Información Personal"
+                          styleClass="title_text"/>
+                </children>
+            </VBox>
+
+            <VBox alignment="CENTER" styleClass="info_container" maxWidth="450">
+                <children>
+                    <Label text="Cédula:"/>
+                    <TextField fx:id="cedulaField" editable="false" promptText="Cédula"/>
+
+                    <Label text="Nombre:"/>
+                    <TextField fx:id="nombreField" editable="false" promptText="Nombre"/>
+
+                    <Label text="Apellido:"/>
+                    <TextField fx:id="apellidoField" editable="false" promptText="Apellido"/>
+
+                    <Label text="Correo Electrónico:"/>
+                    <TextField fx:id="emailField" promptText="Nuevo Correo"/>
+
+                    <Label text="Teléfono:"/>
+                    <TextField fx:id="telefonoField" promptText="Nuevo Teléfono"/>
+
+                    <Label text="Contraseña:"/>
+                    <PasswordField fx:id="passwordField" promptText="Nueva Contraseña"/>
+
+                    <Label text="Dirección:"/>
+                    <TextField fx:id="direccionField" promptText="Nueva Dirección"/>
+
+                    <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+                    <HBox styleClass="alt_menu_btn">
+                        <Button onAction="#guardarCambios" text="Guardar Cambios">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-save" iconSize="15" styleClass="iconview_btn"/>
+                            </graphic>
+                        </Button>
+                        <Button onAction="#volverMenu" text="Volver al Menú">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                </children>
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>

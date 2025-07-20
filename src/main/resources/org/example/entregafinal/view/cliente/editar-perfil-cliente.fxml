@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" styleClass="panel" stylesheets="@../styles/perfilCliente.css"
+             xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.entregafinal.controller.cliente.EditarPerfilClienteController">
+    <children>
+        <VBox layoutY="20.0" alignment="TOP_CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+              AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" styleClass="vbox_container">
+            <VBox alignment="CENTER" styleClass="title_container" prefWidth="700.0">
+                <children>
+                    <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+                    <Text strokeType="OUTSIDE" text="Mi Banquito - Editar Información Personal" styleClass="title_text"/>
+                </children>
+            </VBox>
+
+            <VBox alignment="CENTER" styleClass="info_container" maxWidth="450">
+                <children>
+                    <Label text="Cédula:"/>
+                    <TextField fx:id="cedulaField" editable="false"/>
+
+                    <Label text="Nombre:"/>
+                    <TextField fx:id="nombreField" editable="false"/>
+
+                    <Label text="Apellido:"/>
+                    <TextField fx:id="apellidoField" editable="false"/>
+
+                    <Label text="Correo Electrónico:"/>
+                    <TextField fx:id="emailField"/>
+
+                    <Label text="Teléfono:"/>
+                    <TextField fx:id="telefonoField"/>
+
+                    <Label text="Contraseña:"/>
+                    <PasswordField fx:id="passwordField"/>
+
+                    <Label text="Dirección:"/>
+                    <TextField fx:id="direccionField" editable="false"/>
+
+                    <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+                    <HBox styleClass="alt_menu_btn">
+                        <Button onAction="#guardarCambios" text="Guardar Cambios">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-save" iconSize="15" styleClass="iconview_btn"/>
+                            </graphic>
+                        </Button>
+                        <Button onAction="#volverMenu" text="Volver al Menú">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                </children>
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>

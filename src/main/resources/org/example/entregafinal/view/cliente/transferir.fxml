@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="530.0" prefWidth="700.0" stylesheets="@../styles/transferencia.css"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="org.example.entregafinal.controller.cliente.TransferenciaController"
+            styleClass="container_principal">
+
+    <VBox alignment="CENTER" styleClass="transferencia_container" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+
+        <VBox styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0" maxWidth="480">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text strokeWidth="0.0" styleClass="title_text"
+                  text="Mi Banquito - Transferencia "/>
+        </VBox>
+
+        <VBox alignment="CENTER" styleClass="transfer_card" maxWidth="480">
+            <VBox alignment="CENTER" styleClass="icon_section">
+                <FontIcon iconLiteral="fas-exchange-alt" iconSize="50" styleClass="icon_principal"/>
+                <Label text="Transferir Dinero" styleClass="card_title"/>
+                <Label text="Ingresa los datos para realizar la transferencia" styleClass="card_subtitle"/>
+            </VBox>
+
+            <VBox styleClass="form_transferencia">
+                <VBox spacing="6">
+                    <Label text="Número Cuenta de Destino: " styleClass="form_label"/>
+                    <HBox alignment="CENTER_LEFT" spacing="8" styleClass="input_container">
+                        <FontIcon iconLiteral="fas-id-card" iconSize="16" styleClass="input_icon"/>
+                        <TextField fx:id="cuentaDestinoField" promptText="Número de cuenta"
+                                   styleClass="cantidad_input"/>
+                    </HBox>
+                </VBox>
+
+                <VBox spacing="6">
+                    <Label text="Monto a Transferir: " styleClass="form_label"/>
+                    <HBox alignment="CENTER_LEFT" spacing="8" styleClass="input_container">
+                        <FontIcon iconLiteral="fas-dollar-sign" iconSize="16" styleClass="input_icon"/>
+                        <TextField fx:id="montoField" promptText="0.00" styleClass="cantidad_input"/>
+                    </HBox>
+                </VBox>
+
+                <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+                <HBox alignment="CENTER" spacing="12">
+                    <Button onAction="#realizarTransferencia" text="Transferir">
+                        <graphic>
+                            <FontIcon iconLiteral="fas-handshake" iconSize="15" styleClass="iconview_btn"/>
+                        </graphic>
+                    </Button>
+                    <Button onAction="#volverMenu" text="Volver al Menú">
+                        <graphic>
+                            <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                        </graphic>
+                    </Button>
+                </HBox>
+            </VBox>
+        </VBox>
+    </VBox>
+</AnchorPane>

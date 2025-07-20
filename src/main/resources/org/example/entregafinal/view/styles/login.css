@@ -1,0 +1,102 @@
+.login_container {
+    -fx-background-color: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.03), 30, 0.5, 0, 0);
+    -fx-spacing: 20;
+}
+
+.login_logo_container {
+    -fx-background-color: linear-gradient(to bottom, #1e3a1e, #132a13);
+    -fx-alignment: center;
+    -fx-padding: 25 30 25 30;
+    -fx-effect: dropshadow(gaussian, rgba(19,42,19,0.3), 15, 0.5, 0, 3);
+}
+
+.login_logo_container Text {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-fill: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 2, 0.5, 0, 1);
+}
+
+.login_logo_container .fontawesome-icon {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 2, 0.5, 0, 1);
+}
+
+.login_title {
+    -fx-font-size: 34px;
+    -fx-font-family: "Montserrat SemiBold", "Segoe UI", "Arial", sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a1e;
+    -fx-alignment: center;
+    -fx-padding: 20 0 20 0;
+    -fx-max-width: Infinity;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 3, 0.5, 0, 2);
+}
+
+.text_label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-padding: 0 0 8 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 1.5, 0.3, 0, 1);
+}
+
+.login_form_container {
+    -fx-spacing: 20;
+    -fx-alignment: TOP_LEFT;
+    -fx-padding: 15 25 25 25;
+}
+
+.input_field {
+    -fx-background-color: #ffffff;
+    -fx-pref-height: 42;
+    -fx-font-size: 18px;
+    -fx-padding: 3 16 3 16;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d9e0;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 3, 0.3, 0, 1);
+    -fx-prompt-text-fill: #7f8c8d;
+    -fx-text-fill: #6c7679;
+}
+
+.input_field:hover {
+    -fx-border-color: #95a5a6;
+    -fx-background-color: #fcfcfc;
+}
+
+.input_field:focused {
+    -fx-text-fill: #6c7679;
+}
+
+.login_form_container Button {
+    -fx-background-color: linear-gradient(to bottom, #1e3a1e, #132a13);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 358;
+    -fx-pref-height: 42;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(19,42,19,0.25), 8, 0.4, 0, 2);
+    -fx-translate-y: 20;
+}
+
+.login_form_container Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to bottom, #2a4a2a, #1e3a1e);
+    -fx-effect: dropshadow(gaussian, rgba(19,42,19,0.35), 12, 0.5, 0, 3);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.login_form_container Button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #132A13, #0f1f0f);
+    -fx-effect: dropshadow(gaussian, rgba(19,42,19,0.15), 4, 0.3, 0, 1);
+    -fx-scale-x: 0.99;
+    -fx-scale-y: 0.99;
+}

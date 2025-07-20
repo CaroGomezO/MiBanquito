@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" styleClass="login_container" stylesheets="@styles/login.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.entregafinal.controller.LoginController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="250.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="fontawesome-icon" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Banquito" />
+        </VBox>
+        <VBox alignment="CENTER" layoutX="278.0" layoutY="28.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <Label styleClass="login_title" text="Iniciar Sesión" />
+
+                <Label styleClass="text_label" text="Cédula" />
+                <TextField fx:id="cedulaField" promptText="Ingrese su cédula" styleClass="input_field" />
+                <Label styleClass="text_label" text="Contraseña" />
+                <PasswordField fx:id="passwordField" promptText="Ingrese su contraseña" styleClass="input_field" />
+                <Button onAction="#iniciarSesion" styleClass="login_form_button" text="Ingresar" />
+                <Label fx:id="mensajeLabel" textFill="red" wrapText="true" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

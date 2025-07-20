@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane prefHeight="530.0" prefWidth="700.0" stylesheets="@../styles/menuAdmin.css"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="org.example.entregafinal.controller.admin.MenuAdminController"
+            styleClass="container_principal">
+
+    <children>
+        <VBox styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Banquito - Menú Administrador"/>
+        </VBox>
+
+        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="372.0" styleClass="menu_container"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="150.0">
+            <children>
+                <Button onAction="#irARegistrarCliente" text="Registrar Cliente">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-user-plus" iconSize="20" styleClass="iconview"/>
+                    </graphic>
+                </Button>
+
+                <Button onAction="#irACrearCuentaParaCliente" text="Crear Cuenta Para Cliente">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="20" styleClass="iconview"/>
+                    </graphic>
+                </Button>
+
+                <Button onAction="#irAGestionClientes" text="Consultar y Gestionar Clientes">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-users" iconSize="20" styleClass="iconview"/>
+                    </graphic>
+                </Button>
+
+                <Line endX="330.0"/>
+
+                <Button onAction="#irAEditarMiPerfil" text="Mi Perfil" styleClass="alt_menu_btn">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-user" iconSize="20" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+
+                <Button onAction="#cerrarSesion" text="Cerrar Sesión" styleClass="alt_menu_btn">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-door-open" iconSize="20" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

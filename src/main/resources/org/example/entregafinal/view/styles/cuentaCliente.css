@@ -1,0 +1,158 @@
+.title_container {
+    -fx-background-color: linear-gradient(to right, #1b2b1b, #274427);
+    -fx-alignment: CENTER;
+    -fx-padding: 18 25 18 25;
+    -fx-spacing: 8;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(236, 243, 158, 0.4);
+    -fx-border-width: 0 0 1 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 12, 0.3, 0, 2);
+}
+
+.title_container .icon {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2.5, 0.4, 0, 1);
+}
+
+.title_text {
+    -fx-fill: #f0fbd0;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 2, 0.4, 0, 1);
+}
+
+.vbox_container {
+    -fx-spacing: 25;
+    -fx-alignment: TOP_CENTER;
+    -fx-padding: 20;
+}
+
+.card_box {
+    -fx-spacing: 20;
+    -fx-alignment: CENTER;
+    -fx-padding: 10;
+}
+
+.card {
+    -fx-background-color: linear-gradient(to bottom, #f4f6f7, #e9ebec);
+    -fx-padding: 18 20 18 20;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+    -fx-border-color: rgba(19, 42, 19, 0.12);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 12, 0.4, 0, 4);
+    -fx-min-width: 220;
+    -fx-min-height: 120;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 16, 0.5, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.card_icon {
+    -fx-icon-color: #132a13;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 2, 0.4, 0, 1);
+}
+
+.card_text {
+    -fx-fill: #2c3e50;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 1, 0.3, 0, 1);
+}
+
+.card_label {
+    -fx-fill: #132a13;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 1, 0.3, 0, 1);
+}
+
+.saldo_card {
+    -fx-background-color: linear-gradient(to bottom, #f8fdf2, #f0fbd0);
+    -fx-padding: 18 20 18 20;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+    -fx-border-width: 2;
+    -fx-border-color: linear-gradient(to bottom, #d4e6c7, #cddcb6);
+    -fx-effect: dropshadow(gaussian, rgba(30, 86, 33, 0.2), 16, 0.5, 0, 6);
+    -fx-min-width: 220;
+    -fx-min-height: 120;
+}
+
+.saldo_card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(30, 86, 33, 0.3), 20, 0.6, 0, 8);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.saldo_card .card_icon {
+    -fx-icon-color: #1e5621;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 3, 0.5, 0, 1);
+}
+
+.saldo_card .card_text {
+    -fx-fill: #1e5621;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-alignment: CENTER;
+}
+
+.saldo {
+    -fx-font-size: 24px;
+    -fx-text-fill: #1e5621;
+    -fx-font-weight: bold;
+    -fx-text-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.4, 0, 1);
+}
+
+.hbox_buttons {
+    -fx-spacing: 18;
+    -fx-alignment: CENTER;
+    -fx-padding: 15 0 0 0;
+}
+
+.hbox_buttons Button {
+    -fx-background-color: linear-gradient(to bottom, #1e3a1e, #132A13);
+    -fx-text-fill: #f0fbd0;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-pref-height: 36;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(236, 243, 158, 0.3);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(19, 42, 19, 0.25), 8, 0.4, 0, 3);
+    -fx-cursor: hand;
+}
+
+.hbox_buttons Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to bottom, #2a4a2a, #1e3a1e);
+    -fx-border-color: rgba(236, 243, 158, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(19, 42, 19, 0.4), 12, 0.5, 0, 4);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.hbox_buttons Button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #132a13, #0f1f0f);
+    -fx-effect: dropshadow(gaussian, rgba(19, 42, 19, 0.2), 4, 0.3, 0, 1);
+    -fx-scale-x: 0.99;
+    -fx-scale-y: 0.99;
+}
+
+.hbox_buttons .iconview_btn {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2, 0.5, 0, 1);
+}

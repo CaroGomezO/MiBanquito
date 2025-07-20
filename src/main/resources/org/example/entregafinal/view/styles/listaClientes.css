@@ -1,0 +1,239 @@
+.panel {
+    -fx-background-color: linear-gradient(to bottom right, #f4f6f5, #dbe6e4);
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.04), 35, 0.6, 0, 0);
+    -fx-padding: 22;
+}
+
+.info_container {
+    -fx-alignment: TOP_CENTER;
+    -fx-spacing: 18;
+    -fx-padding: 0 12 0 12;
+}
+
+.title_container {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-padding: 15 30 15 30;
+    -fx-background-radius: 6;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.35), 12, 0.6, 0, 4);
+}
+
+.title_container .icon {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 3, 0.5, 0, 1);
+}
+
+.title_text {
+    -fx-fill: #f0fbd0;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 2, 0.5, 0, 1);
+}
+
+.filter_container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12 10 12 10;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c5d2ce;
+    -fx-border-width: 1.2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 8, 0.4, 0, 3);
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+}
+
+.filter_container Label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 0 0 3 2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 1, 0.4, 0, 1);
+}
+
+.tabla_container {
+    -fx-alignment: CENTER;
+    -fx-background-color: #ffffff;
+    -fx-padding: 8;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d9e0;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 10, 0.4, 0, 3);
+    -fx-pref-width: 860;
+    -fx-max-width: 860;
+    -fx-min-width: 860;
+}
+
+.button_panel {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-text-fill: #f0fbd0;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-pref-height: 32;
+    -fx-min-height: 32;
+    -fx-max-height: 32;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(240, 251, 208, 0.3);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.3), 7, 0.5, 0, 3);
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-padding: 0 18 0 18;
+}
+
+.button_panel:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to bottom, #3a5b48, #2d4739);
+    -fx-border-color: rgba(240, 251, 208, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.4), 10, 0.6, 0, 4);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.button_panel:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1e3329, #14271f);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.2), 5, 0.4, 0, 2);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.vbox_button {
+    -fx-translate-y: -11;
+}
+
+.iconview_btn {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 2, 0.5, 0, 1);
+}
+
+.empty_msg {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+
+.empty_subtext {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 20 0;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 8;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: transparent;
+    -fx-font-size: 13px;
+    -fx-pref-height: 200;
+    -fx-min-height: 200;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-background-radius: 8 8 0 0;
+    -fx-border-color: rgba(240, 251, 208, 0.15);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.25), 5, 0.4, 0, 2);
+    -fx-padding: 0;
+    -fx-border-width: 0 0.8 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #f0fbd0;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER;
+    -fx-padding: 0;
+}
+
+.table-row-cell {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-pref-height: 32;
+    -fx-min-height: 32;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9fbf9;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: linear-gradient(to right, #e8f3e8, #d7f0d7);
+    -fx-effect: dropshadow(gaussian, rgba(45, 71, 57, 0.15), 4, 0.4, 0, 2);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #2d4739, #1e3329);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.25), 4, 0.5, 0, 2);
+}
+
+.table-cell {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-padding: 6 8 6 8;
+    -fx-alignment: CENTER;
+    -fx-border-color: transparent;
+    -fx-wrap-text: true;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #f0fbd0;
+    -fx-font-weight: bold;
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: rgba(45, 71, 57, 0.12);
+    -fx-background-radius: 4;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(45, 71, 57, 0.35);
+    -fx-background-radius: 4;
+}
+
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(45, 71, 57, 0.55);
+}
+
+.table_action_btn {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-text-fill: #f0fbd0;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: rgba(240, 251, 208, 0.3);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.2), 4, 0.4, 0, 2);
+    -fx-padding: 2 8 2 8;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+
+.table_action_btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #3a5b48, #2d4739);
+    -fx-border-color: rgba(240, 251, 208, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.3), 6, 0.5, 0, 3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.table_action_btn:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1e3329, #14271f);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.15), 3, 0.3, 0, 1);
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+}

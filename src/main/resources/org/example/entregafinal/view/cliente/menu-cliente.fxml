@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" styleClass="left_container" stylesheets="@../styles/menuCliente.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.entregafinal.controller.cliente.MenuClienteController">
+    <children>
+        <VBox styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Banquito - Menú Cliente" />
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="372.0" styleClass="menu_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+            <children>
+                <Button onAction="#irADeposito" prefWidth="130.0" text="Depositar">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-money-bill-wave" iconSize="20" styleClass="iconview" />
+                    </graphic>
+                </Button>
+                <Button onAction="#irARetiro" text="Retirar">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-wallet" iconSize="20" styleClass="iconview" />
+                    </graphic>
+                </Button>
+                <Button onAction="#irATransferencia" prefWidth="130.0" text="Transferir">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-handshake" iconSize="20" styleClass="iconview" />
+                    </graphic>
+                </Button>
+                <Line endX="250.0" />
+                <Button onAction="#irAPerfil" styleClass="alt_menu_btn" text="Mi Perfil">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-user" iconSize="20" styleClass="iconview_btn" />
+                    </graphic>
+                </Button>
+                <Button onAction="#irACuenta" prefWidth="224.0" styleClass="alt_menu_btn" text="Cuenta y Movimientos">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="20" styleClass="iconview_btn" />
+                    </graphic>
+                </Button>
+                <Button onAction="#cerrarSesion" prefWidth="159.0" styleClass="alt_menu_btn" text="Cerrar Sesión">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-door-open" iconSize="20" styleClass="iconview_btn" />
+                    </graphic>
+                </Button>
+
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

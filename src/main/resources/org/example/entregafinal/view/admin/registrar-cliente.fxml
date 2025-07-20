@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="420" prefWidth="700.0" stylesheets="@../styles/registroCliente.css"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="org.example.entregafinal.controller.admin.RegistrarClienteController"
+            styleClass="container_admin">
+    <VBox alignment="TOP_CENTER" spacing="20" styleClass="admin_container" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <VBox maxWidth="548" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="50" styleClass="icon"/>
+            <Text fill="#f0fbd0" strokeWidth="0.0" styleClass="title_text" text="Mi Banquito - Registrar Cliente"/>
+        </VBox>
+
+        <VBox styleClass="form_card" spacing="14" maxWidth="548">
+            <VBox alignment="CENTER" spacing="8">
+                <FontIcon iconLiteral="fas-user-plus" iconSize="46" styleClass="icon_card"/>
+                <Label text="Registrar Cliente" styleClass="form_title"/>
+                <Label text="Completa los datos del nuevo cliente." styleClass="form_subtitle"/>
+            </VBox>
+
+            <VBox spacing="10" styleClass="form_inputs">
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-id-card" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="cedulaField" promptText="Cédula" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-user" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="nombreField" promptText="Nombre" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-user" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="apellidoField" promptText="Apellido" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-envelope" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="emailField" promptText="Correo Electrónico" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-phone" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="telefonoField" promptText="Teléfono" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-lock" iconSize="16" styleClass="input_icon"/>
+                    <PasswordField fx:id="passwordField" promptText="Contraseña" styleClass="form_input"/>
+                </HBox>
+
+                <HBox spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" styleClass="input_icon"/>
+                    <TextField fx:id="direccionField" promptText="Dirección" styleClass="form_input"/>
+                </HBox>
+            </VBox>
+
+            <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+
+            <HBox alignment="CENTER" spacing="12" styleClass="hbox_buttons">
+                <Button onAction="#registrarCliente" text="Registrar" styleClass="form_button">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-user-plus" iconSize="15" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+                <Button onAction="#volverMenu" text="Volver al Menú" styleClass="form_button">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-share" iconSize="15" styleClass="iconview_btn"/>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </VBox>
+</AnchorPane>

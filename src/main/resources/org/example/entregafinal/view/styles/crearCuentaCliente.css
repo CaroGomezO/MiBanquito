@@ -1,0 +1,142 @@
+.container_admin {
+    -fx-background-color: linear-gradient(to bottom right, #f4f6f5, #dbe6e4);
+    -fx-padding: 25;
+    -fx-alignment: CENTER;
+    -fx-spacing: 18;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.03), 30, 0.5, 0, 0);
+}
+
+.admin_container {
+    -fx-spacing: 16;
+    -fx-alignment: CENTER;
+}
+
+.title_container {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-padding: 15 30 15 30;
+    -fx-background-radius: 6;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.3), 10, 0.5, 0, 3);
+}
+
+.title_container .icon {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2, 0.5, 0, 1);
+}
+
+.title_text {
+    -fx-font-size: 26px;
+    -fx-text-fill: #f0fbd0;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2, 0.5, 0, 1);
+}
+
+.form_card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #d1d9e0;
+    -fx-border-width: 1.5;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 8, 0.3, 0, 2);
+    -fx-pref-width: 420;
+}
+
+.form_label {
+    -fx-text-fill: #34495e;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 4 2;
+}
+
+.input_container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 6;
+    -fx-border-color: #d1d9e0;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 6;
+    -fx-padding: 0 12 0 12;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 8;
+    -fx-pref-height: 42;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 3, 0.3, 0, 1);
+}
+
+.input_container:focused {
+    -fx-border-color: #1e3329;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.15), 6, 0.4, 0, 2);
+    -fx-background-color: #fcfcfc;
+}
+
+.input_container:hover {
+    -fx-border-color: #95a5a6;
+    -fx-background-color: #fcfcfc;
+}
+
+.input_icon {
+    -fx-icon-color: #2e4034;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.3, 0, 1);
+}
+
+.admin_container TextField,
+.admin_container ComboBox {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 0;
+    -fx-pref-height: 42;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-prompt-text-fill: #7f8c8d;
+}
+
+.admin_container TextField:focused,
+.admin_container ComboBox:focused {
+    -fx-effect: none;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.admin_container Button {
+    -fx-background-color: linear-gradient(to bottom, #2d4739, #1e3329);
+    -fx-text-fill: #f0fbd0;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 42;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(46,64,52,0.25), 6, 0.4, 0, 2);
+    -fx-cursor: hand;
+    -fx-padding: 0 16 0 16;
+    -fx-margin: 8 0 0 0;
+    -fx-border-color: rgba(236, 243, 158, 0.3);
+    -fx-border-width: 1;
+}
+
+.admin_container Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #3a5b48, #2d4739);
+    -fx-border-color: rgba(236, 243, 158, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.4), 8, 0.5, 0, 3);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.admin_container Button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1e3329, #14271f);
+    -fx-effect: dropshadow(gaussian, rgba(46, 64, 52, 0.15), 4, 0.3, 0, 1);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.iconview_btn {
+    -fx-icon-color: #f0fbd0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 2, 0.5, 0, 1);
+}
+
+.hbox_buttons {
+    -fx-translate-y: -11;
+}

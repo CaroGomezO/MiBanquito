@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.*?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" styleClass="container_admin" stylesheets="@../styles/crearCuentaCliente.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.entregafinal.controller.admin.CrearCuentaClienteController">
+    <VBox alignment="TOP_CENTER" spacing="8" styleClass="admin_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+
+        <VBox maxWidth="480" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <FontIcon iconLiteral="fas-piggy-bank" iconSize="60" styleClass="icon" />
+            <Text fill="#f0fbd0" strokeWidth="0.0" styleClass="title_text" text="Mi Banquito - Crear Cuenta Para Cliente" />
+        </VBox>
+
+        <VBox spacing="16" styleClass="form_card" maxWidth="548" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <VBox spacing="6">
+                <Label styleClass="form_label" text="Cédula del Cliente" />
+                <HBox alignment="CENTER_LEFT" spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-id-card" iconSize="16" styleClass="input_icon" />
+                    <TextField fx:id="cedulaField" promptText="Ingresa la Cédula" />
+                </HBox>
+            </VBox>
+
+            <VBox spacing="6">
+                <Label styleClass="form_label" text="Tipo de Cuenta" />
+                <HBox alignment="CENTER_LEFT" spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="16" styleClass="input_icon" />
+                    <ComboBox fx:id="tipoCuentaComboBox" promptText="Tipo de Cuenta">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Cuenta de Ahorro" />
+                                <String fx:value="Cuenta Corriente" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </HBox>
+            </VBox>
+
+            <VBox spacing="6">
+                <Label styleClass="form_label" text="Número de Cuenta" />
+                <HBox alignment="CENTER_LEFT" spacing="8" styleClass="input_container">
+                    <FontIcon iconLiteral="fas-hashtag" iconSize="16" styleClass="input_icon" />
+                    <TextField fx:id="numeroCuentaField" promptText="Ingresa el Número" />
+                </HBox>
+            </VBox>
+
+            <Label fx:id="mensajeLabel" textFill="red" wrapText="true" />
+
+            <HBox alignment="CENTER" spacing="12" styleClass="hbox_buttons">
+                <Button onAction="#crearCuenta" text="Crear Cuenta">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-plus" iconSize="20" styleClass="iconview_btn" />
+                    </graphic>
+                </Button>
+                <Button onAction="#volverMenu" text="Volver al Menú">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-share" iconSize="20" styleClass="iconview_btn" />
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </VBox>
+</AnchorPane>
